@@ -2,42 +2,29 @@
 Стандарти муніципальних відкритих даних
 ======================================================
 
-
-
-Коротка інформація про проект та важливсть використання стандартів відкритих даних
-
-
-
-Загальний огляд
-****************
+Коротка інформація про проект та важливсть використання стандартів відкритих даних.
 
 .. toctree::
-   :maxdepth: 1
+   :glob:
+   :titlesonly:
+   :caption: Загальний огляд
 
-   about
-   frames
-   contribute
+   overview/*
+   *
 
-
-
-Стандарти наборів даних
-****************
 .. toctree::
-   :maxdepth: 1
+   :titlesonly:
+   :caption: Стандарти наборів даних
 
-   standardReferenceBook
-   standardAds
-   standardCommunalProperty
-   standardDrugs
-
-
-
+   standards/referenceBookOfOrganizations/v.1.0/standard
+   standards/communalLentPropertyList/v.1.0/standard
+   standards/adsMediums/v.1.0/standard
+   standards/budgetPurchasedDrugs/v.1.0/standard
 
 
+.. Indices and tables
+.. ****************
 
-Indices and tables
-****************
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
