@@ -1,13 +1,14 @@
 Довідник підприємств, установ (закладів) та організацій
 ============================
 
+  .. contents:: :local:
 
 Паспорт набору відкритих даних
 ----------------------------
 
-	.. csv-table::
-   		:widths: 25 75
-   		:file: passport.csv
+   .. csv-table::
+      :file: passport.csv
+      :widths: 25 75
 
 
 Опис структури набору
@@ -17,42 +18,52 @@ organization.csv
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Перелік підприємств, організацій, закладів та установ, які безпосередньо підпорядковані розпоряднику.
 
- 	.. csv-table::
-   		:header-rows: 1
-   		:widths: 15 55 15 15
-   		:file: structureDescription/organization.csv
+  .. csv-table::
+     :header-rows: 1
+     :file: structureDescription/organization.csv
+     :widths: 20 40 20 20
 
 contactPoint.csv
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Перелік контактних осіб для кожної з організацій, вказаних у таблиці organization.csv, їх телефонів, факсів та адрес електронної пошти.
 
- 	.. csv-table::
-   		:header-rows: 1
-   		:widths: 15 55 15 15
-   		:file: structureDescription/contactPoint.csv
+  .. csv-table::
+     :header-rows: 1
+     :file: structureDescription/contactPoint.csv
+     :widths: 20 40 20 20
 
 contactPointHoursAvailable.csv
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Час прийому для кожної контактної особи з таблиці contactPoint.csv
 
- 	.. csv-table::
-   		:header-rows: 1
-   		:widths: 15 55 15 15
-   		:file: structureDescription/contactPointHoursAvailable.csv
+  .. csv-table::
+     :header-rows: 1
+     :file: structureDescription/contactPointHoursAvailable.csv
+     :widths: 20 40 20 20
 
 
 organizationHoursAvailable.csv
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Час прийому для кожної організації з таблиці organization.csv
 
- 	.. csv-table::
-   		:header-rows: 1
-   		:widths: 15 55 15 15
-   		:file: structureDescription/organizationHoursAvailable.csv
+  .. csv-table::
+     :header-rows: 1
+     :file: structureDescription/organizationHoursAvailable.csv
+     :widths: 20 40 20 20
 
 
 Шаблон структури
 ----------------------------
+
+Завантажити шаблони структури можна за посиланням
+
+  .. _example: structureTemplate/organization.csv
+
+  .. _example: structureTemplate/contactPoint.csv
+
+  .. _example: structureTemplate/contactPointHoursAvailable.csv
+
+  .. _example: structureTemplate/organizationHoursAvailable.csv
 
 
 Додаткові відомості
@@ -123,7 +134,26 @@ opens, closes
 Приклади
 ----------------------------
 
+  .. csv-table::
+     :header-rows: 1
+     :file: examples.csv
+     :widths: 35 30 35
 
+Версії та підтримка
+----------------------------
 
+Історія версій стандарту
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+  .. csv-table::
+     :header-rows: 1
+     :file: releaseHistory.csv
+     :widths: 15 25 35 25
 
+Підтримка
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  .. csv-table::
+     :header-rows: 1
+     :file: support.csv
+     :widths: 15 55 30
