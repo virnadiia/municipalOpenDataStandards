@@ -55,12 +55,11 @@ organizationHoursAvailable.csv
 Шаблон структури
 ----------------------------
 
-Завантажити шаблони структури можна за посиланнями:
-- `organisation <StructureTemplate/organisation.csv>`_
-- `contactPoint <StructureTemplate/contactPoint.csv>`_
-- `contactPointHoursAvailable <StructureTemplate/contactPointHoursAvailable.csv>`_
-- `organizationHoursAvailable <StructureTemplate/organisationHoursAvailable.csv>`_
-
+:download:`organisation.csv <StructureTemplate/organisation.csv>`
+:download:`contactPoint.csv <StructureTemplate/contactPoint.csv>`
+:download:`contactPointHoursAvailable.csv <StructureTemplate/contactPointHoursAvailable.csv>`
+:download:`organizationHoursAvailable.csv <StructureTemplate/organisationHoursAvailable.csv>`
+ 
 
 Додаткові відомості
 ----------------------------
