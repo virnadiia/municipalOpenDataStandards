@@ -1,21 +1,9 @@
-/* override table width restrictions from
-https://github.com/rtfd/sphinx_rtd_theme/issues/117
-*/
-.wy-table-responsive table td, .wy-table-responsive table th {
-    white-space: normal;
-}
-
-.wy-table-responsive {
-    margin-bottom: 24px;
-    max-width: 100%;
-    overflow: visible;
-}
-
-/* override table width restrictions from
-https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html
+/* override table width restrictions */
 @media screen and (min-width: 767px) {
 
    .wy-table-responsive table td {
+      /* !important prevents the common CSS stylesheets from overriding
+         this as on RTD they are loaded after this stylesheet */
       white-space: normal !important;
    }
 
@@ -23,4 +11,3 @@ https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html
       overflow: visible !important;
    }
 }
-*/
