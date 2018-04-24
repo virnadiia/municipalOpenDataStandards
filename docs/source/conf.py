@@ -19,13 +19,15 @@
 # -- Markdown setings --------------------------------------------------------
 
 from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
 import os
+
 
 # -- Project information -----------------------------------------------------
 
-project = 'MunicipalOpenDataStandards'
-copyright = '2018, Bohdan Tyshkevych'
-author = 'Bohdan Tyshkevych'
+project = 'Стандарти місцевих відкритих даних'
+# copyright = '2018, Bohdan Tyshkevych'
+# author = 'Bohdan Tyshkevych'
 
 # The short X.Y version
 version = '1.0'
@@ -54,20 +56,19 @@ extensions = [
 
 
 # Add any paths that contain templates here, relative to this directory.
+# default directory: templates_path = ['ntemplates']
 
-# templates_path = ['ntemplates']
 templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
+# default value: source_suffix = '.rst'
 # You can specify multiple suffix as a list of string:
-#
 
 source_parsers = {
     '.md': CommonMarkParser,
 }
 
 source_suffix = ['.rst', '.md']
-#source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
@@ -92,7 +93,11 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------------
 
-#-----------------------------------------------------------------------------
+# Due to bug in sphinx_rtd_theme I use this block of code
+# For clarification see issues:
+# https://github.com/rtfd/readthedocs.org/issues/2116
+# https://github.com/rtfd/sphinx_rtd_theme/issues/117
+
 import os
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
@@ -109,17 +114,14 @@ else:
     ],
   }
 
-#----------------------------------------------------------------------------
-
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-# html_theme = 'alabaster' # default theme
+# default theme: html_theme = 'alabaster'
 
-#-------------------------------------------------------------------
-#html_theme = "sphinx_rtd_theme"
-#html_theme_path = ["_themes", ]
-#-------------------------------------------------------------------
+# (!) This block of code is already implemented due to the bug in sphinx_rtd_theme
+# html_theme = "sphinx_rtd_theme" 
+# html_theme_path = ["_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -138,12 +140,6 @@ else:
 
 html_static_path = ['_static']
 
-#html_context = {
-#    'css_files': [
-#        '_static/theme_overrides.css',  # override wide tables in RTD theme
-#        ],
-#     }
-
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -158,7 +154,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'MunicipalOpenDataStandardsdoc'
+htmlhelp_basename = 'Стандарти місцевих відкритих даних'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -185,8 +181,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'MunicipalOpenDataStandards.tex', 'MunicipalOpenDataStandards Documentation',
-     'Bohdan Tyshkevych', 'manual'),
+    (master_doc, 'MunicipalOpenDataStandards.tex', 'Стандарти місцевих відкритих даних',
+     'стандарти'),
 ]
 
 
@@ -195,8 +191,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'municipalopendatastandards', 'MunicipalOpenDataStandards Documentation',
-     [author], 1)
+    (master_doc, 'СтандартиМісцевихВідкритихДаних', 'Стандарти місцевих відкритих даних', 1)
 ]
 
 
@@ -206,9 +201,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MunicipalOpenDataStandards', 'MunicipalOpenDataStandards Documentation',
-     author, 'MunicipalOpenDataStandards', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, 'СтандартиМісцевихВідкритихДаних', 'Стандарти місцевих відкритих даних',
+      'MunicipalOpenDataStandards', 'One line description of project.'),
 ]
 
 
@@ -218,3 +212,16 @@ texinfo_documents = [
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+
+# -- Execute rst code in markdown ---------------------------------------------
+
+# (!) This feature is not tested
+
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+        #'url_resolver': lambda url: github_doc_root + url,
+        'auto_toc_tree_section': 'Contents',
+        'enable_eval_rst': True
+        }, True)
+    app.add_transform(AutoStructify)
