@@ -42,14 +42,21 @@ release = 'beta'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
+# (!) add 'sphinx.ext.ifconfig'
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
+    'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
 ]
 
+
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['ntemplates']
+
+# templates_path = ['ntemplates']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -75,7 +82,9 @@ language = 'uk_UA'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = []
+
+# (!) add patterns '_build', 'Thumbs.db', '.DS_Store'
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -84,7 +93,7 @@ pygments_style = 'sphinx'
 # -- Options for HTML output -------------------------------------------------
 
 #-----------------------------------------------------------------------------
-
+import os
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
@@ -129,11 +138,11 @@ else:
 
 html_static_path = ['_static']
 
-html_context = {
-    'css_files': [
-        '_static/theme_overrides.css',  # override wide tables in RTD theme
-        ],
-     }
+#html_context = {
+#    'css_files': [
+#        '_static/theme_overrides.css',  # override wide tables in RTD theme
+#        ],
+#     }
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
