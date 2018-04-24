@@ -1,5 +1,5 @@
 
-Стандарти муніципальних відкритих даних
+Стандарти місцевих відкритих даних
 ======================================================
 
 Коротка інформація про проект та важливсть використання стандартів відкритих даних.
@@ -16,10 +16,10 @@
    :titlesonly:
    :caption: Стандарти наборів даних
 
-   standards/referenceBookOfOrganizations/v.1.0/standard
-   standards/communalLentPropertyList/v.1.0/standard
-   standards/adsMediums/v.1.0/standard
-   standards/budgetPurchasedDrugs/v.1.0/standard
+   standards/ReferenceBookOfOrganizations/v.1.0/Standard
+   standards/CommunalLentPropertyList/v.1.0/Standard
+   standards/AdsMediums/v.1.0/Standard
+   standards/BudgetPurchasedDrugs/v.1.0/Standard
 
 
 

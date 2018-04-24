@@ -7,7 +7,7 @@
 ----------------------------
 
    .. csv-table::
-      :file: passport.csv
+      :file: Passport.csv
       :widths: 25 75
 
 
@@ -20,7 +20,7 @@ organization.csv
 
   .. csv-table::
      :header-rows: 1
-     :file: structureDescription/organization.csv
+     :file: StructureDescription/organization.csv
      :widths: 20 40 20 20
 
 contactPoint.csv
@@ -29,7 +29,7 @@ contactPoint.csv
 
   .. csv-table::
      :header-rows: 1
-     :file: structureDescription/contactPoint.csv
+     :file: StructureDescription/contactPoint.csv
      :widths: 20 40 20 20
 
 contactPointHoursAvailable.csv
@@ -38,7 +38,7 @@ contactPointHoursAvailable.csv
 
   .. csv-table::
      :header-rows: 1
-     :file: structureDescription/contactPointHoursAvailable.csv
+     :file: StructureDescription/contactPointHoursAvailable.csv
      :widths: 20 40 20 20
 
 
@@ -48,22 +48,18 @@ organizationHoursAvailable.csv
 
   .. csv-table::
      :header-rows: 1
-     :file: structureDescription/organizationHoursAvailable.csv
+     :file: StructureDescription/organizationHoursAvailable.csv
      :widths: 20 40 20 20
 
 
 Шаблон структури
 ----------------------------
 
-Завантажити шаблони структури можна за посиланням
-
-  .. _example: structureTemplate/organization.csv
-
-  .. _example: structureTemplate/contactPoint.csv
-
-  .. _example: structureTemplate/contactPointHoursAvailable.csv
-
-  .. _example: structureTemplate/organizationHoursAvailable.csv
+Завантажити шаблони структури можна за посиланнями:
+- `organisation <StructureTemplate/organisation.csv>`_
+- `contactPoint <StructureTemplate/contactPoint.csv>`_
+- `contactPointHoursAvailable <StructureTemplate/contactPointHoursAvailable.csv>`_
+- `organizationHoursAvailable <StructureTemplate/organisationHoursAvailable.csv>`_
 
 
 Додаткові відомості
@@ -136,7 +132,7 @@ opens, closes
 
   .. csv-table::
      :header-rows: 1
-     :file: examples.csv
+     :file: Examples.csv
      :widths: 35 30 35
 
 Версії та підтримка
@@ -147,7 +143,7 @@ opens, closes
 
   .. csv-table::
      :header-rows: 1
-     :file: releaseHistory.csv
+     :file: ReleaseHistory.csv
      :widths: 15 25 35 25
 
 Підтримка
@@ -155,5 +151,5 @@ opens, closes
 
   .. csv-table::
      :header-rows: 1
-     :file: support.csv
+     :file: Support.csv
      :widths: 15 55 30
