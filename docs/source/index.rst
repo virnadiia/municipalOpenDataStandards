@@ -16,10 +16,10 @@
    :titlesonly:
    :caption: Стандарти наборів даних
 
-   standards/ReferenceBookOfOrganizations/v.1.0/Standard
-   standards/CommunalLentPropertyList/v.1.0/Standard
-   standards/AdsMediums/v.1.0/Standard
-   standards/BudgetPurchasedDrugs/v.1.0/Standard
+   standards/ReferenceBookOfOrganizations/v.1.0/Standard.rst
+   standards/CommunalLentPropertyList/v.1.0/Standard.rst
+   standards/AdsMediums/v.1.0/Standard.rst
+   standards/BudgetPurchasedDrugs/v.1.0/Standard.rst
 
 
 
